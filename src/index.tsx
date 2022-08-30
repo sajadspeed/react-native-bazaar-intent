@@ -15,6 +15,18 @@ const BazaarIntent = NativeModules.BazaarIntent  ? NativeModules.BazaarIntent  :
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return BazaarIntent.multiply(a, b);
+export function details(packagename: string): void {
+	return BazaarIntent.details(packagename);
+}
+
+export function comments(packagename: string): void {
+	return BazaarIntent.comments(packagename);
+}
+
+export function developerApps(developerId: string): void {
+	return BazaarIntent.developerApps(developerId);
+}
+
+export function userLogin(): void {
+	return BazaarIntent.userLogin();
 }

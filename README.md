@@ -1,5 +1,7 @@
 # react-native-bazaar-intent
-Cafe Bazaar Intets
+
+React Native module for Bazaar Intents.
+
 ## Installation
 
 ```sh
@@ -9,21 +11,12 @@ npm install react-native-bazaar-intent
 ## Usage
 
 ```js
-import { multiply } from "react-native-bazaar-intent";
+import { details, comments, developerApps, userLogin } from 'react-native-bazaar-intent';
 
 // ...
 
-const result = await multiply(3, 7);
+details(PACKAGE_NAME) // Details screen
+comments(PACKAGE_NAME) // Comment screen
+developerApps(DEVELOPER_ID) // Developer Apps screen
+userLogin() // User login screen
 ```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
